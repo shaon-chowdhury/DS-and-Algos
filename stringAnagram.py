@@ -2,7 +2,7 @@ def anagrams(stringArray):
 
     stringDict = {}
     for string in stringArray:
-        stringDict[string] = ''.join(sorted(list(set(string))))
+        stringDict[string] = ''.join(sorted(list(string)))
 
     uniqLetterGrp = {}
     for _, uniqueLetters in stringDict.items():
